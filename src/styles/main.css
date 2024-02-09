@@ -1,0 +1,62 @@
+
+
+#mainTitle {
+    overflow: hidden; 
+    color: beige;
+    font-size: 3vw;
+    letter-spacing: .15em; /* Adjust as needed */
+    font-family: 'Noto Sans', sans-serif;
+    text-align: center;
+}
+  
+  
+body {
+    background-color: #121211;
+}
+
+#secondaryTitle {
+    color: beige;
+    text-align: center;
+    font-size: 1vw;
+}
+
+#paragraph {
+    color: beige;
+    text-align: left;
+    font-size: 0.9vw;
+    margin-top: 2vw;
+    text-align: center;
+}
+
+div {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    list-style-type: none;
+}
+
+#postmatterTitle {
+    text-align: center;
+    font-size: 1.2vw;
+    
+}
+
+#postmatterdescription{
+    font-size: 0.9vw;
+    text-align: center;
+
+}
+
+.blog {
+    text-decoration: none;
+    color: white;
+    background-color: #191919;
+    padding: 0.5vw;
+    border-radius: 2vw;
+    margin: 1vw;
+}

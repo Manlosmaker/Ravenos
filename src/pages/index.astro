@@ -1,6 +1,12 @@
 ---
-
+import '../styles/main.css'
+const allPosts = await Astro.glob('../pages/posts/*.md');
 ---
+
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  </style>
+
 
 <html lang="en">
 	<head>
@@ -11,6 +17,14 @@
 		<title>Astro</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+
+		<h1 id="mainTitle">Raventos</h1>
+		<h2 id="secondaryTitle">My place to put things on the internet </h2>
+		<p id="paragraph">This is a... template website but I neesd to have a place to post work and blog posts so it will hopefully develop over the next period of time.</p>
+		<h1 id="mainTitle">Blog post archive</h1>
+		<div>
+			{allPosts.map((post) => <li class="blog"><a href={post.url}><p id="postmatterTitle">{post.frontmatter.title}</p><p id="">{post.frontmatter.description}</p></a></li>)}
+		</div>
+	
 	</body>
 </html>
